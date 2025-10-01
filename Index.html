@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laman Pribadi - Surya Bagaskara</title>
+  <style>
+    /* === Global Styling === */
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #0d001a; /* Ungu gelap */
+      color: #f5f5f5;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* === Navbar === */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 3rem;
+      background: #1a0033;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    nav .menu a {
+      margin-left: 2rem;
+      font-weight: 500;
+      color: #ddd;
+    }
+
+    nav .menu a:hover {
+      color: #bb86fc;
+    }
+
+    /* === Hero Section === */
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+
+    .hero img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 3px solid #bb86fc;
+    }
+
+    .hero h1 {
+      margin-top: 1rem;
+      font-size: 2.2rem;
+    }
+
+    .hero p {
+      margin: 0.3rem 0;
+      color: #bbb;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background: #6200ee;
+      padding: 0.7rem 1.5rem;
+      border-radius: 25px;
+      color: #fff;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #3700b3;
+    }
+
+    /* === Section === */
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 3rem 1rem;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #bb86fc;
+    }
+
+    .card {
+      background: #1a0033;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    }
+
+    /* === SWOT Grid === */
+    .swot {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .swot .card {
+      text-align: left;
+    }
+
+    .strength { border-left: 5px solid #00c853; }
+    .weakness { border-left: 5px solid #ffab00; }
+    .opportunity { border-left: 5px solid #2962ff; }
+    .threat { border-left: 5px solid #d50000; }
+
+    /* === Footer === */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #1a0033;
+      margin-top: 2rem;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- === Navbar === -->
+  <nav>
+    <div class="logo">Surya Bagaskara</div>
+    <div class="menu">
+      <a href="#profil">Tentang Saya</a>
+      <a href="#swot">Analisis SWOT</a>
+      <a href="#rencana">Rencana Tugas Akhir</a>
+    </div>
+  </nav>
+
+  <!-- === Hero === -->
+  <section class="hero">
+    <img src="mereah.jpg" alt="Foto Profil">
+    <h1>Surya Bagaskara</h1>
+    <p>Mahasiswa Teknik Informatika, Universitas Lampung</p>
+    <p>Membangun solusi digital inovatif melalui Rekayasa Perangkat Lunak.</p>
+    <a href="#profil" class="btn">Jelajahi Lebih Lanjut</a>
+  </section>
+
+  <!-- === Profil === -->
+  <section id="profil">
+    <h2>Profil Singkat</h2>
+    <div class="card">
+      <p>
+        Saya adalah seorang mahasiswa Teknik Informatika di Universitas Lampung dengan minat dalam pengembangan perangkat lunak, IoT, dan basis data. 
+        Saya percaya teknologi digital adalah kunci untuk mempercepat efisiensi, inovasi, dan kolaborasi.
+      </p>
+    </div>
+  </section>
+
+  <!-- === SWOT === -->
+  <section id="swot">
+    <h2>Analisis SWOT Diri</h2>
+    <div class="swot">
+      <div class="card strength">
+        <h3>Strengths</h3>
+        <ul>
+          <li>Cepat beradaptasi dengan teknologi baru</li>
+          <li>Pengalaman dalam web & IoT</li>
+          <li>Mampu bekerja dalam tim</li>
+        </ul>
+      </div>
+      <div class="card weakness">
+        <h3>Weaknesses</h3>
+        <ul>
+          <li>Kadang kurang fokus jika banyak tugas</li>
+          <li>Terlalu detail dalam pengerjaan</li>
+        </ul>
+      </div>
+      <div class="card opportunity">
+        <h3>Opportunities</h3>
+        <ul>
+          <li>Peluang di bidang Software & IoT sangat luas</li>
+          <li>Dukungan dosen & komunitas teknologi</li>
+        </ul>
+      </div>
+      <div class="card threat">
+        <h3>Threats</h3>
+        <ul>
+          <li>Perkembangan teknologi sangat cepat</li>
+          <li>Persaingan dengan mahasiswa lain</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- === Rencana Skripsi & KP === -->
+  <section id="rencana">
+    <h2>Rencana Skripsi & Kerja Praktik</h2>
+    <div class="card">
+      <h3>Skripsi</h3>
+      <p>
+        Mengembangkan sistem berbasis <em>IoT</em> atau <em>aplikasi web</em> 
+        yang memberikan solusi nyata di bidang pendidikan atau sistem informasi.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Kerja Praktik</h3>
+      <p>
+        Melaksanakan KP di perusahaan IT atau startup untuk mendalami pengalaman praktis,
+        khususnya dalam pengembangan web atau sistem IoT.
+      </p>
+    </div>
+  </section>
+
+  <!-- === Footer === -->
+  <footer>
+    &copy; 2025 Surya Bagaskara | Program Studi Teknik Informatika, Universitas Lampung
+  </footer>
+
+</body>
+</html>
